@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Sally's Resume" content="this is a webpage that showcases Sally Student's formal resume">
+    <title>Sally's Resume</title>
+  </head>
+  <body>
+    <div id="application-root"></div>
+
+
+
+    <!-- REACT STUFF -->
+    <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+      src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+
+    <script type="text/babel">
+        const appRoot = document.querySelector('#application-root');
+
+
+
+
+    function Header() {
+        return (
+            <header>
+                <h1> Sally Student</h1>
+            </header>
+        )
+
+    }
+    function Main() {
+        return (
+            <main>
+            <section>
+                <header>
+                    <h2>Education</h2>
+                </header>
+                <p>Temple University</p>
+                <p>2011-2015</p>
+            </section>
+            <section>
+                <header>
+                    <h2>Employment History</h2>
+                </header>
+                <h3>Google, Inc - Web Developer</h3>
+                <h4>January 2011 - December 2015</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?</p>
+                <h3>Microsoft - Software Engineer</h3>
+                <h4>January 2016 - January 2020</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?</p>
+            </section>
+            </main>
+        )
+
+    }
+    function Address() {
+        return (
+            <section>
+                <header>
+                    <h2>Contact Me</h2>
+                </header>
+                <address>
+                    <ul>
+                        <li>Sally Student</li>
+                        <li><a href="mailto:sallystudent@gmail.com">Email Me Here</a></li>
+                        <li>(989) 777-0987</li>
+                        <li><img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="a picture of Sally Student"/></li>
+                    </ul>
+                </address>
+            </section>
+        )
+    }
+
+    function App() {
+        return (
+            <section>
+                <Header />
+                <Main />
+                <Address />
+            </section>
+ 
+        )
+    }
+
+    ReactDOM.render(<App />, appRoot);
+    </script>
+  </body>
+</html>
